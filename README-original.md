@@ -1,11 +1,11 @@
 pacman
 ======
 
-Agrega alias para el administrador de paquetes pacman.
+Adds aliases for the pacman package manager.
 
-También incluye ayudante(s) opcional(es).
+Also includes optional helper(s).
 
-Ajustes
+Settings
 --------
 Set `wrapper_here` to a wrapper if applicable (powerpill, pacmatic, etc):
 
