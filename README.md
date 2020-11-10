@@ -7,110 +7,112 @@ También incluye ayudante(s) opcional(es).
 
 Ajustes
 --------
-Set `wrapper_here` to a wrapper if applicable (powerpill, pacmatic, etc):
+<!-- Set `wrapper_here` to a wrapper if applicable (powerpill, pacmatic, etc): TODO: buscar mejores terminos paea wrapper -->
+Establece `wrapper_aquí` a un wrapper si aplica (powerpill, pacmatic, etc):
 
-    zstyle ':zim:pacman' frontend 'wrapper_here'
+    zstyle ':zim:pacman' frontend 'wrapper_aquí'
 
-Add any helper scripts to be loaded:
+Agrega cualquier script de ayudante para ser cargado.
 
     zstyle ':zim:pacman' helpers 'aur'
 
-Helpers
+
+Ayudantes
 -------
 
 ### aur
 
-provides simple AUR helper aliases.
+Provee alias simples para el ayudante del AUR.
 
-  * `aurb package_name` clone the package from the AUR, build, and install.
-  * `aurd package_name` clone the package from the AUR, but do not build.
-  * `auru` run inside a directory created with `aurb`, this will update, build, and install a package.
+  * `aurb nombre_del_paquete` clona el paquete del AUR, lo compila e instala.
+  * `aurd nombre_del_paquete` clona el paquete del AUR, pero no lo compila.
+  * `auru` ejecuta dentro de un directorio creado con `aurb`, esto actualizar, compilara e instalara un paquete.
 
-Aliases
+Alias
 -------
 
-### Build
+### Compilación
 
-  * `pacb` build package in the current directory, cleanup, and install.
+  * `pacb` compila un paquete en la carpeta/directorio actual, limpia, e instala.
 
-### Install
+### Instalación
 
-  * `paci` install, sync, and upgrade packages.
-  * `pacu` install, sync, and upgrade packages (forcibly refresh package list).
-  * `pacU` install packages from pkg file.
-  * `pacd` install all packages in current directory.
+  * `paci` instala, sincroniza y actualiza los paquete(s).
+  * `pacu` instala, sincroniza y actualiza los paquete(s) (actualiza la lista de paquetes forzosamente).
+  * `pacU` instala paquetes desde un archivo pkg.
+  * `pacd` instala todos los paquetes presentes en la carpeta actual.
 
-### Remove
+### Eliminación
 
-  * `pacr` remove package and unneeded dependencies.
-  * `pacrm` remove package, unneded dependencies, and configuration files.
+  * `pacr`  elimina el/los paquetes y las dependencias innecesarias.
+  * `pacrm` elimina el/los paquete(s), dependencias innecesarias y archivos de configuración.
 
-### Query
+### Consultas
 
-  * `pacq` query package information from remote repository
-  * `pacQ` query package information from local repository
+  * `pacq` consulta información del paquete(s) desde el repositorio remoto.
+  * `pacQ` consulta información del paquete(s) desde el repositorio local.
 
-### Search
+### Búsqueda
 
-  * `pacs` search for package in the remote repository
-  * `pacS` search for package in the local repository
+  * `pacs` busca el/los paquete(s) en el repositorio remoto.
+  * `pacS` busca el/los paquete(s) en el repositorio local.
 
-### Orphans
+### Huérfanos
 
-  * `pacol` list orphan packages
-  * `pacor` remove all orphan packages
+  * `pacol` muesta una lista de todos los paquetes huérfanos.
+  * `pacor` elimina todos los paquetes huérfanos.
 
-### Database
-  * `pacpexp` mark packages as explicitly installed
-  * `pacpdep` mark packages as non-explicitly installed or as dependency
+### Base de datos
+  * `pacpexp` marca el/los paquete(s) como instalados explícitamente.
+  * `pacpdep` marca el/los paquete(s) como instalados inexplicablemente o dependencias.
 
-### Ownership
+### Propiedad
 
-  * `pacown` list all files provided by a given package
-  * `pacblame` show package(s) that own a specified file
+  * `pacown`   lista todos los archivos proporcionados por un(os) paquete(s) dado(s)
+  * `pacblame` muestra el/los paquete(s) que son propietario(s) del archivo especificado.
 
 ---
 ---
-yay-aliases
+yay alias
 ======
 
-Adds aliases for the yay AUR helper.
+Agrega alias para el ayudante de AUR yay.
 
-Aliases
+Alias
 -------
 
 ### General
 
-  * `yconf` print current yay configuration.
+  * `yconf` muestra(imprime) en pantalla la configuración actual de yay.
 
-### Install
+### Instalación
 
-  * `yi` install, sync, and upgrade packages.
-  * `yu` install, sync, and upgrade packages (forcibly refresh package list).
-  * `yU` install packages from pkg file.
-  * `yd` install all packages in current directory.
+  * `yi` instala, sincroniza y actualiza los paquetes.
+  * `yu` instala, sincroniza y actualiza los paquete(s) (actualiza la lista de paquetes forzosamente).
+  * `yU` instala paquetes desde un archivo pkg.
+  * `yd` instala todos los paquetes presentes en la carpeta actual.
 
-### Remove
+### Eliminación
 
-  * `yr` remove package and unneeded dependencies.
-  * `yrm` remove package, unneded dependencies, and configuration files.
+  * `yr`  elimina el/los paquetes y las dependencias innecesarias.
+  * `yrm` elimina el/los paquete(s), dependencias innecesarias y archivos de configuración.
 
-### Query
+### Consultas
 
-  * `yq` query package information from remote repository
-  * `yQ` query package information from local repository
+  * `yq` consulta información del paquete(s) desde el repositorio remoto.
+  * `yQ` consulta información del paquete(s) desde el repositorio local.
 
-### Search
+### Búsqueda
 
-  * `ys` search for package in the remote repository
-  * `yS` search for package in the local repository
+  * `ys` busca el/los paquete(s) en el repositorio remoto.
+  * `yS` busca el/los paquete(s) en el repositorio local.
 
-### Orphans
+### Huérfanos
 
-  * `yol` list orphan packages
-  * `yor` remove all orphan packages
+  * `yol` muesta una lista de todos los paquetes huérfanos.
+  * `yor` elimina todos los paquetes huérfanos.
 
-### Ownership
+### Propiedad
 
-  * `yown` list all files provided by a given package
-  * `yblame` show package(s) that own a specified file
+  * `yown`   lista todos los archivos proporcionados por un(os) paquete(s) dado(s).
+  * `yblame` muestra el/los paquete(s) que son propietario(s) del archivo especificado.
