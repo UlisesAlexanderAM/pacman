@@ -124,5 +124,5 @@ Alias
 ## Ayuda y retroalimentacion
 
 Si gustan hacer comentarios sobre la traduccion son libres de abrir un issue y/o hacer pull request. Tambien si se les ocurre algun otro alias o funcionalidad.  
-El README.md original en ingles se encuentra [aquí](README-original.md).  
+El README.md original en ingles se encuentra [aquí](README.md).  
 Espero que les sea de utilidad la traducción.
