@@ -1,128 +1,77 @@
 pacman
 ======
 
-Agrega alias para el administrador de paquetes pacman.
+Adds aliases for the pacman package manager.
 
-También incluye ayudante(s) opcional(es).
+Also includes optional helper(s).
 
-Ajustes
+Settings
 --------
-<!-- Set `wrapper_here` to a wrapper if applicable (powerpill, pacmatic, etc): TODO: buscar mejores terminos paea wrapper -->
-Establece `wrapper_aquí` a un wrapper si aplica (powerpill, pacmatic, etc):
+Set `wrapper_here` to a wrapper if applicable (powerpill, pacmatic, etc):
 
-    zstyle ':zim:pacman' frontend 'wrapper_aquí'
+    zstyle ':zim:pacman' frontend 'wrapper_here'
 
-Agrega cualquier script de ayudante para ser cargado.
+Add any helper scripts to be loaded:
 
     zstyle ':zim:pacman' helpers 'aur'
 
-
-Ayudantes
+Helpers
 -------
 
 ### aur
 
-Provee alias simples para el ayudante del AUR.
+provides simple AUR helper aliases.
 
-  * `aurb nombre_del_paquete` clona el paquete del AUR, lo compila e instala.
-  * `aurd nombre_del_paquete` clona el paquete del AUR, pero no lo compila.
-  * `auru` ejecuta dentro de un directorio creado con `aurb`, esto actualizar, compilara e instalara un paquete.
+  * `aurb package_name` clone the package from the AUR, build, and install.
+  * `aurd package_name` clone the package from the AUR, but do not build.
+  * `auru` run inside a directory created with `aurb`, this will update, build, and install a package.
 
-Alias
+Aliases
 -------
 
-### Compilación
+### Build
 
-  * `pacb` compila un paquete en la carpeta/directorio actual, limpia, e instala.
+  * `pacb` build package in the current directory, cleanup, and install.
 
-### Instalación
+### Install
 
-  * `paci` instala, sincroniza y actualiza los paquete(s).
-  * `pacu` instala, sincroniza y actualiza los paquete(s) (actualiza la lista de paquetes forzosamente).
-  * `pacU` instala paquetes desde un archivo pkg.
-  * `pacd` instala todos los paquetes presentes en la carpeta actual.
+  * `paci` install, sync, and upgrade packages.
+  * `pacu` install, sync, and upgrade packages (forcibly refresh package list).
+  * `pacU` install packages from pkg file.
+  * `pacd` install all packages in current directory.
 
-### Eliminación
+### Remove
 
-  * `pacr`  elimina el/los paquetes y las dependencias innecesarias.
-  * `pacrm` elimina el/los paquete(s), dependencias innecesarias y archivos de configuración.
+  * `pacr` remove package and unneeded dependencies.
+  * `pacrm` remove package, unneded dependencies, and configuration files.
 
-### Consultas
+### Query
 
-  * `pacq` consulta información del paquete(s) desde el repositorio remoto.
-  * `pacQ` consulta información del paquete(s) desde el repositorio local.
+  * `pacq` query package information from remote repository
+  * `pacQ` query package information from local repository
 
-### Búsqueda
+### Search
 
-  * `pacs` busca el/los paquete(s) en el repositorio remoto.
-  * `pacS` busca el/los paquete(s) en el repositorio local.
+  * `pacs` search for package in the remote repository
+  * `pacS` search for package in the local repository
 
-### Huérfanos
+### Orphans
 
-  * `pacol` muesta una lista de todos los paquetes huérfanos.
-  * `pacor` elimina todos los paquetes huérfanos.
+  * `pacol` list orphan packages
+  * `pacor` remove all orphan packages
 
-### Base de datos
-  * `pacpexp` marca el/los paquete(s) como instalados explícitamente.
-  * `pacpdep` marca el/los paquete(s) como instalados inexplicablemente o dependencias.
+### Database
+  * `pacpexp` mark packages as explicitly installed
+  * `pacpdep` mark packages as non-explicitly installed or as dependency
 
-### Propiedad
+### Ownership
 
-  * `pacown`   lista todos los archivos proporcionados por un(os) paquete(s) dado(s)
-  * `pacblame` muestra el/los paquete(s) que son propietario(s) del archivo especificado.
-
----
----
-yay alias
-======
-
-Agrega alias para el ayudante de AUR yay.
-
-Alias
--------
-
-### General
-
-  * `yconf` muestra(imprime) en pantalla la configuración actual de yay.
-
-### Instalación
-
-  * `yi` instala, sincroniza y actualiza los paquetes.
-  * `yu` instala, sincroniza y actualiza los paquete(s) (actualiza la lista de paquetes forzosamente).
-  * `yU` instala paquetes desde un archivo pkg.
-  * `yd` instala todos los paquetes presentes en la carpeta actual.
-
-### Eliminación
-
-  * `yr`  elimina el/los paquetes y las dependencias innecesarias.
-  * `yrm` elimina el/los paquete(s), dependencias innecesarias y archivos de configuración.
-
-### Consultas
-
-  * `yq` consulta información del paquete(s) desde el repositorio remoto.
-  * `yQ` consulta información del paquete(s) desde el repositorio local.
-
-### Búsqueda
-
-  * `ys` busca el/los paquete(s) en el repositorio remoto.
-  * `yS` busca el/los paquete(s) en el repositorio local.
-
-### Huérfanos
-
-  * `yol` muesta una lista de todos los paquetes huérfanos.
-  * `yor` elimina todos los paquetes huérfanos.
-
-### Propiedad
-
-  * `yown`   lista todos los archivos proporcionados por un(os) paquete(s) dado(s).
-  * `yblame` muestra el/los paquete(s) que son propietario(s) del archivo especificado.
+  * `pacown` list all files provided by a given package
+  * `pacblame` show package(s) that own a specified file
   
   
-----
-----
-
-## Ayuda y retroalimentacion
-
-Si gustan hacer comentarios sobre la traduccion son libres de abrir un issue y/o hacer pull request. Tambien si se les ocurre algun otro alias o funcionalidad.  
-El README.md original en ingles se encuentra [aquí](README-original.md).  
-Espero que les sea de utilidad la traducción.
+## Traduccion en español
+Si quieren ver la version en español de este README pueden hacerlo [aqui](README-en-español.md). 
+Si quieren ayudar con la traduccion pueden cambiar a la rama traduccion-en-español. 
+Tambien ahi estaran los archivos pero en español, actualmente (09 de noviembre de 2020) solo
+el README esta traducido.
