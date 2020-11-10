@@ -116,3 +116,13 @@ Alias
 
   * `yown`   lista todos los archivos proporcionados por un(os) paquete(s) dado(s).
   * `yblame` muestra el/los paquete(s) que son propietario(s) del archivo especificado.
+  
+  
+----
+----
+
+## Ayuda y retroalimentacion
+
+Si gustan hacer comentarios sobre la traduccion son libres de abrir un issue y/o hacer pull request. Tambien si se les ocurre algun otro alias o funcionalidad.  
+El README.md original en ingles se encuentra [aquí](README-original.md).  
+Espero que les sea de utilidad la traducción.
