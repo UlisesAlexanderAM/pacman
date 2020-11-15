@@ -128,7 +128,7 @@
   alias pacblame="${zpacman_frontend} -Qo"
 
   #source yay aliases
-  source .zim/modules/pacman/yay-aliases.zsh
+  # source .zim/modules/pacman/yay-aliases.zsh
 
   #
   # Helpers
