@@ -68,16 +68,62 @@ Aliases
 
   * `pacown` list all files provided by a given package
   * `pacblame` show package(s) that own a specified file
-  
-  
+---
+---
+yay-aliases
+======
+
+Adds aliases for the yay AUR helper.
+
+Aliases
+-------
+
+### General
+
+  * `yayconf` print current yay configuration.
+
+### Install
+
+  * `yins` install, sync, and upgrade packages.
+  * `yupg` install, sync, and upgrade packages (forcibly refresh package list).
+  * `yinsf` install packages from pkg file.
+  * `yinsdir` install all packages in current directory.
+
+### Remove
+
+  * `yr` remove package and unneeded dependencies.
+  * `yrm` remove package, unneded dependencies, and configuration files.
+
+### Query
+
+  * `yqry` query package information from remote repository
+  * `yQry` query package information from local repository
+
+### Search
+
+  * `ys` search for package in the remote repository
+  * `yS` search for package in the local repository
+
+### Orphans
+
+  * `yol` list orphan packages
+  * `yor` remove all orphan packages
+
+### Ownership
+
+  * `yown` list all files provided by a given package
+  * `yblame` show package(s) that own a specified file
+---
+---
+======
 ## Spanish translation / Traduccion en español
 If you want to see the spanish version of this file, you can do it [here](README-en-español.md).
 If you want to help with the translation, you can switch to the traduccion-en-español branch.
 Also there would be the rest of the files in spanish, right now (11.09.2020) only this file is
 translate.
-  
 
-Si quieren ver la version en español de este README, pueden hacerlo [aqui](README-en-español.md). 
-Si quieren ayudar con la traduccion, pueden cambiar a la rama traduccion-en-español. 
+
+Si quieren ver la version en español de este README, pueden hacerlo [aqui](README-en-español.md).
+Si quieren ayudar con la traduccion, pueden cambiar a la rama traduccion-en-español.
 Tambien ahi estaran los archivos pero en español, actualmente (09 de noviembre de 2020) solo
 el README esta traducido.
