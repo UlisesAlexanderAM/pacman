@@ -138,8 +138,8 @@
   local -a zpacman_helpers
   zstyle -a ':zim:pacman' helpers 'zpacman_helpers'
   for helper in ${zpacman_helpers}; do
-    if [[ -s ${0:h}/modules/pacman/helper_${helper}.zsh ]]; then
-      source ${0:h}/modules/pacman/helper_${helper}.zsh
+    if [[ -s $ZIM_HOME/modules/pacman/helper_${helper}.zsh ]]; then
+      source $ZIM_HOME/modules/pacman/helper_${helper}.zsh
     else
       print "no such helper script \"helper_${helper}.zsh\"" >&2
     fi
