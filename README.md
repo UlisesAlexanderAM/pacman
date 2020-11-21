@@ -68,7 +68,6 @@ Aliases
 
   * `pacown` list all files provided by a given package
   * `pacblame` show package(s) that own a specified file
-
 ---
 ---
 yay-aliases
@@ -81,14 +80,14 @@ Aliases
 
 ### General
 
-  * `yconf` print current yay configuration.
+  * `yayconf` print current yay configuration.
 
 ### Install
 
-  * `yi` install, sync, and upgrade packages.
-  * `yu` install, sync, and upgrade packages (forcibly refresh package list).
-  * `yU` install packages from pkg file.
-  * `yd` install all packages in current directory.
+  * `yins` install, sync, and upgrade packages.
+  * `yupg` install, sync, and upgrade packages (forcibly refresh package list).
+  * `yinsf` install packages from pkg file.
+  * `yinsdir` install all packages in current directory.
 
 ### Remove
 
@@ -97,8 +96,8 @@ Aliases
 
 ### Query
 
-  * `yq` query package information from remote repository
-  * `yQ` query package information from local repository
+  * `yqry` query package information from remote repository
+  * `yQry` query package information from local repository
 
 ### Search
 
@@ -114,3 +113,17 @@ Aliases
 
   * `yown` list all files provided by a given package
   * `yblame` show package(s) that own a specified file
+---
+---
+======
+## Spanish translation / Traduccion en español
+If you want to see the spanish version of this file, you can do it [here](README-en-español.md).
+If you want to help with the translation, you can switch to the traduccion-en-español branch.
+Also there would be the rest of the files in spanish, right now (11.09.2020) only this file is
+translate.
+
+
+Si quieren ver la version en español de este README, pueden hacerlo [aqui](README-en-español.md).
+Si quieren ayudar con la traduccion, pueden cambiar a la rama traduccion-en-español.
+Tambien ahi estaran los archivos pero en español, actualmente (09 de noviembre de 2020) solo
+el README esta traducido.
